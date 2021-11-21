@@ -1,9 +1,11 @@
-<h1>投稿一覧</h1>
+<div class="list-wrap">
 <% @lists.each do |list| %>
-  <p>タイトル</p>
-  <span>
-    <%= link_to list.title, todolist_path(list.id) %>
-  </span>
-  <p>画像</p>
-  <%= attachment_image_tag list, :image, :fill, 100, 100, format: 'jpeg' %>
+  <div class="list-box">
+    <%= attachment_image_tag list, :image, :fill, 200, 200, format: 'jpeg' %>
+    <div class="list-comment">
+      <span class="list-body"><%= list.body %></span>
+      <span class="list-title"><%=link_to list.title, todolist_path(list.id) %></span>
+    </div>
+  </div>
 <% end %>
+</div>
