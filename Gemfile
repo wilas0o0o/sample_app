@@ -64,3 +64,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 # 画像加工用gem
 gem "refile-mini_magick"
+
+gem 'dotenv-rails'
