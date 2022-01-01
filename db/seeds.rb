@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+List.create!(
+  title: 'railsを学ぼう',
+  body: 'seedファイルについて'
+)
+
+10.times do |number|
+  List.create!(title: 'timesを学習しよう',body: number)
+end
